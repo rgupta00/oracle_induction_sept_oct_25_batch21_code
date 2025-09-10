@@ -10,10 +10,27 @@ account
 //	..............................un-----------RuntimeException
 
 class AccountCreationException extends Exception{
+	private static final long serialVersionUID = 2531907415000035401L;
+
 	public AccountCreationException(String message) {
 		super(message);
 	}
 }
+class NotSufficientFundException extends RuntimeException{
+	private static final long serialVersionUID = 2872839064073709432L;
+
+	public NotSufficientFundException(String message) {
+		super(message);
+	}
+}
+class OverFundException extends RuntimeException{
+	private static final long serialVersionUID = -7867229422668433914L;
+
+	public OverFundException(String message) {
+		super(message);
+	}
+}
+
 class Account{
 	private int id;
 	private String name;
@@ -31,11 +48,20 @@ class Account{
 		this.balance = balance;
 	}
 	public void deposit(double amount) {
+		double temp=balance+ amount;
+		if(temp>20_00000) {
+			throw new OverFundException("u must go for current accont ");
+		}
 		balance+=amount;
 	}
 	
 	public void withdraw(double amount) {
-		balance-=amount;
+		//min balance at any time must 10k
+		double temp= balance-amount;
+		if(temp<10000) {
+			throw new NotSufficientFundException("you must have min 10k in your account always");
+		}
+		balance=temp;
 	}
 	
 	public void print() {
@@ -51,7 +77,16 @@ public class D_UserDefineEx {
 		try {
 			account = new Account("ekta", 200_000);
 			account.print();
+			account.withdraw(20_000);
+			account.deposit(230_0000);
+			
 		}catch(AccountCreationException e) {
+			System.out.println(e.getMessage());
+			
+		}catch(OverFundException e) {
+			System.out.println(e.getMessage());
+		}
+		catch(NotSufficientFundException e) {
 			System.out.println(e.getMessage());
 		}
 		
