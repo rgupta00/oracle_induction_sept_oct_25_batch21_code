@@ -1,0 +1,29 @@
+What’s happening step by step:
+1. String s1 = "hi";
+
+The literal "hi" is stored in the String Pool.
+
+If "hi" already exists in the pool, s1 will reference that.
+
+String literals are automatically interned by Java.
+
+This means that s1 points to the canonical instance of "hi" in the pool.
+
+2. String s2 = new String("hi").intern();
+
+new String("hi") creates a new String object in the heap, independent of the String pool.
+
+intern() checks if "hi" already exists in the pool:
+
+If it does, it returns the reference to the existing pooled string.
+
+If not, it adds it to the pool and then returns the reference.
+
+In this case, "hi" is already in the pool (because of s1), so intern() will return the same reference as s1.
+
+✅ Key Differences
+Aspect	s1 = "hi"	s2 = new String("hi").intern()
+Memory location	Points to String Pool	Creates a new object in heap first, then references String Pool
+Object creation	Only pool instance	Heap instance is created, then discarded after interning
+Performance	More efficient	Slightly less efficient because of extra heap allocation
+Use case	Default for constants	Used when you explicitly want to ensure you're using the pooled version
