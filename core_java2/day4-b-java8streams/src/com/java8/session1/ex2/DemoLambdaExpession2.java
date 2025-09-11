@@ -30,20 +30,9 @@ public class DemoLambdaExpession2 {
 //		.map(b->b.getTitle())
 //		.collect(Collectors.toList());
 		
-		List<String> namesOfTheBookThatAreCostly = 
-				books.stream()
-		.filter(Book::isCoslty)
-		.map(Book::getTitle)
-		.toList();
-		
-		namesOfTheBookThatAreCostly.forEach(name-> System.out.println(name));
 		
 		//print all books and print there BookDto(name and price) only if price is greater then 500
 		
-		books.stream()
-		.filter(b->b.isCoslty())
-		.map( b->  new BookDto(b.getTitle(), b.getPrice()))
-		.forEach(bdto-> System.out.println(bdto));
 		
 		
 		

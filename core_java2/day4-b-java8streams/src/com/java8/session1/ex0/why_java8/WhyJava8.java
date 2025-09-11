@@ -17,11 +17,7 @@ public class WhyJava8 {
         System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "1000");
         //System.out.println(Runtime.getRuntime().availableProcessors());
         long start=System.currentTimeMillis();
-        long count= LongStream.rangeClosed(1,100_00)
-                .parallel()
-                .filter(Prime::isPrime)
-                .count();
-        System.out.println(count);
+       
         long end=System.currentTimeMillis();
         System.out.println(end-start+" ms");
 

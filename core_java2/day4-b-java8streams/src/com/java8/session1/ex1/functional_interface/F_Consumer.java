@@ -15,14 +15,6 @@ public class F_Consumer {
 
 		//Consumer take the data dont return anything!
 		
-		Consumer<String> consumer= s-> System.out.println(s);
-			
-	
-		consumer.accept("i love teaching");
-		
-		BiConsumer<String, Integer> biConsumer=(s1, l1)-> System.out.println(s1+" : "+ l1);
-		
-		biConsumer.accept("delhi", 35);
 		
 		
 

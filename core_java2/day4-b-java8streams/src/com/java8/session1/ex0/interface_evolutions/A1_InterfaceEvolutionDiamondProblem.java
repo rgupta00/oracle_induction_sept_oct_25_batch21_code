@@ -9,16 +9,12 @@ interface Y{
         System.out.println("foof of interface Y");
     }
 }
-class M implements X, Y{
-    public void foof(){
-        X.super.foof();
-        Y.super.foof();
-        System.out.println("overriden");
-    }
-}
+//class M implements X, Y{
+//
+//}
 public class A1_InterfaceEvolutionDiamondProblem {
     public static void main(String[] args) {
-    Y x=new M();
-    x.foof();
+//    Y x=new M();
+//    x.foof();
     }
 }

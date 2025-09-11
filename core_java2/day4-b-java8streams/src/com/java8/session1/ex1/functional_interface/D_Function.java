@@ -91,23 +91,23 @@ public class D_Function {
     	//Take one thing convert into other thing
     	//String -> int
     	
-    	Function<String, Integer> nameToLength=name-> name.length();
-    	
-    	System.out.println(nameToLength.apply("india is great"));
-    	
-    	//Employee -> salary
-    	Function<Emp, Double> empToSalary=e-> e.getSalary();
-    	
-    	//Emp -> EmpData
-    	
-//    	Function<Emp, EmpData> convert=e-> new EmpData(e.getId(), e.getSalary());    	
-    	
-    	Function<Emp, EmpData> convert= e ->new EmpData(e.getId(), e.getSalary());
-			
-		//Boilerplate code , seramony
-    	BiFunction<String, String, String> biFunction=( s1,  s2) -> s1.concat(s2);
-			
-		
+//    	Function<String, Integer> nameToLength=name-> name.length();
+//    	
+//    	System.out.println(nameToLength.apply("india is great"));
+//    	
+//    	//Employee -> salary
+//    	Function<Emp, Double> empToSalary=e-> e.getSalary();
+//    	
+//    	//Emp -> EmpData
+//    	
+////    	Function<Emp, EmpData> convert=e-> new EmpData(e.getId(), e.getSalary());    	
+//    	
+//    	Function<Emp, EmpData> convert= e ->new EmpData(e.getId(), e.getSalary());
+//			
+//		//Boilerplate code , seramony
+//    	BiFunction<String, String, String> biFunction=( s1,  s2) -> s1.concat(s2);
+//			
+//		
 		
     	
 //        Function<String,Integer> nameLength= name-> name.length();

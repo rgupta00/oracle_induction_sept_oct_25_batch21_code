@@ -13,53 +13,6 @@ public class AppleTester {
 						new Apple("green", 500), 
 						new Apple("green", 200),
 				new Apple("red", 450));
-		// apples.forEach(a-> System.out.println(a));
-		
-		//Lambda vs method ref :: 
-		//method ref is even more easy way to write lambda
-		
-		//Predicate<Apple> heavyPredicate = a -> a.getWeight() >= 400;
-
-		Predicate<Apple> heavyPredicate =Apple::isHeavy;
-		
-		
-		
-		
-
-		System.out.println("---------printing all heavy apples----------");
-		List<Apple> heavyApplesList = AppleApp.getApplesOnCondition(apples, Apple::isHeavy);
-
-		heavyApplesList.forEach(a -> System.out.println(a));
-		
-		System.out.println("---------printing all greens apples----------");
-
-		Predicate<Apple> greenPredicate =Apple::isGreen;// a -> a.getColor().equals("green")
-
-//		Predicate<Apple> greenPredicate2 =Apple::isGreen;
-		Predicate<Apple> greenPredicate2 =AppleLogic::isHeavy;
-		
-		List<Apple> greenApplesList = AppleApp.getApplesOnCondition(apples, greenPredicate);
-		greenApplesList.forEach(a-> System.out.println(a));
-
-		System.out.println("heavy and green apples");
-		
-		Predicate<Apple> greenAndHeavyPredicate= heavyPredicate.and(greenPredicate);
-		
-		List<Apple> greenApplesAndHeavyApplesList = AppleApp.getApplesOnCondition(apples, greenAndHeavyPredicate);
-		greenApplesAndHeavyApplesList.forEach(a-> System.out.println(a));
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		

@@ -13,24 +13,11 @@ interface Foo{
     public static final int i=0;
     public  abstract void foo();
 
-//    public  default void fooDefault(){
-//        System.out.println("foo default method");
-//    }
-//    public static  void fooStatic(){
-//        System.out.println("foo stataic method");
-//    }
 }
-class FooImpl implements Foo{
-    @Override
-    public void foo(){
-        System.out.println("foo method is overriden");
-    }
-   
-}
+
 public class A_BasicOfInterfaceEvolution {
     public static void main(String[] args) {
-        Foo foo=new FooImpl();
-        foo.foo();
+
 //        foo.fooDefault();
 //
 //        Foo.fooStatic();

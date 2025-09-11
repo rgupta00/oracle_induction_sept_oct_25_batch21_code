@@ -8,29 +8,7 @@ public class A_Predicate {
 
        //What is predicate? data -> true/false
     	
-    	String nameData="rajeev";
-    	
-    	Predicate<String> myPredicate= t->  t.contains("raj");
-		System.out.println(myPredicate.test(nameData));	
-		
-    	//predicate to check if no is even
-		Predicate<Integer> predicateOdd=no-> no%2!=0;
-		System.out.println(predicateOdd.test(33));
-		
-		//rich employee: 5L
-		Predicate<Employee> richEmpPredicate= e->  e.getSalary()>=5_00_000;
-		
-		Employee e1=new Employee(121, "anil", 1_00_00);
-		
-		System.out.println(richEmpPredicate.test(e1));
-		
-		//x> y : t : false
-		BiPredicate<Integer, Integer> biPredicate=( a,  b)-> a>=b;
-		
-	
-		
-		
-		
+    
 		
 		
 		
@@ -50,7 +28,7 @@ public class A_Predicate {
 //        System.out.println(richEmp.test(new Employee(1,"raj",90_00_00_0)));
 
 		//BiPredicate
-        BiPredicate<Integer,Integer> biPreidate=(a, b)-> a>=b;
+     //   BiPredicate<Integer,Integer> biPreidate=(a, b)-> a>=b;
 		
 		
     }

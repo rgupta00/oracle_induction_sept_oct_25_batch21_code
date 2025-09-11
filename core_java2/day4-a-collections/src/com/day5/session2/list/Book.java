@@ -1,5 +1,37 @@
 package com.day5.session2.list;
+//Custom sort: comparator
 
+import java.util.Comparator;
+
+class BookSortAsPerPriceAndThenAsPerTitle implements Comparator<Book>{
+	
+	@Override
+	public int compare(Book b1, Book b2) {
+		int value= Double.compare(b2.getPrice(), b1.getPrice());
+		if(value==0) {
+			value= b1.getTitle().compareTo(b2.getTitle());
+		}
+		return value;
+	}
+}
+
+
+class BookSortAsPerPrice implements Comparator<Book>{
+	
+	@Override
+	public int compare(Book b1, Book b2) {
+		return Double.compare(b2.getPrice(), b1.getPrice());
+	}
+}
+
+class BookSortAsPerTitle implements Comparator<Book>{
+	
+	@Override
+	public int compare(Book b1, Book b2) {
+		return b1.getTitle().compareTo(b2.getTitle());
+	}
+	
+}
 public class Book implements Comparable<Book>{
 	private int id;
 	private String title;
@@ -48,5 +80,5 @@ public class Book implements Comparable<Book>{
 	public int compareTo(Book o) {
 		return Integer.compare(this.id, o.id);
 	}
-	
+
 }
