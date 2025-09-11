@@ -22,11 +22,11 @@ class MyKey{
 	public String toString() {
 		return "MyKey [k=" + k + "]";
 	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(k);
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -45,7 +45,15 @@ class MyKey{
 public class I_UserDefineKey {
 	public static void main(String[] args) {
 		
-
+		MyKey key1=new MyKey(1);
+		
+		MyKey key2=new MyKey(1);
+		
+		System.out.println(key1.equals(key2));
+		System.out.println(key1.hashCode());
+		System.out.println(key2.hashCode());
+		
+		
 	}
 }
 
