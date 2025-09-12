@@ -14,8 +14,17 @@ public class F_Consumer {
 	public static void main(String[] args) {
 
 		//Consumer take the data dont return anything!
+		Consumer<Integer> consumer= value-> System.out.println(value);
+			
+		BiConsumer<Integer, String> biConsumer=
+				(val, val2)-> System.out.println(val + " : "+ val2);
 		
 		
+				
+				
+				
+				
+				
 		
 
 //		Consumer<String>consumer=s-> System.out.println(s);

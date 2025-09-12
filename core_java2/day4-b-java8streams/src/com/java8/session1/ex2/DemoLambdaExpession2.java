@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import static java.util.stream.Collectors.*;
+
+import java.util.ArrayList;
 public class DemoLambdaExpession2 {
 
 	public static void main(String[] args) {
@@ -18,11 +20,37 @@ public class DemoLambdaExpession2 {
 				new Book(621, "c programming", "gunika", 700)
 				);
 		
-		//how the design pattern are impl in the light of java
-
+		books.stream().filter(b-> b.getPrice()>=500)
+					.sorted(Comparator.comparing(Book::getPrice))
+					.map(b-> b.getTitle())
+					.forEach(name-> System.out.println(name));
 		
 		
 		//find all all books and print there name if price is greater then 500
+		//java 7 impartive ways
+//		List<Book> selectedBooks=new ArrayList<>();
+//		for(Book b: books) {
+//			if(b.getPrice()>=500) {
+//				selectedBooks.add(b);
+//			}
+//		}
+//		List<String> booksName=new ArrayList<>();
+//		for(Book b: selectedBooks) {
+//			booksName.add(b.getTitle());
+//		}
+//		
+//		for(String name: booksName) {
+//			System.out.println(name);
+//		}
+		
+		//find all all books and print there name if price is greater then 500
+		
+		
+		
+		
+		
+		
+		
 		//fluent api
 //		List<String> namesOfTheBookThatAreCostly = 
 //				books.stream()

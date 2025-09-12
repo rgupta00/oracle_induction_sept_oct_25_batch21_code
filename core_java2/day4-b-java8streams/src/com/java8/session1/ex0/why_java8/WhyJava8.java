@@ -13,11 +13,21 @@ class Prime {
 }
 public class WhyJava8 {
     public static void main(String[] args) {
-        //1 to 1_000_000
+    	
+    	System.out.println(Runtime.getRuntime().availableProcessors());
+    	
+    	//13559 ms
+    	//1907 ms
+        //1 to 1_000_00000
         System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "1000");
         //System.out.println(Runtime.getRuntime().availableProcessors());
         long start=System.currentTimeMillis();
        
+        long nos=LongStream.range(1, 1_000_00)
+        		.filter(Prime::isPrime)
+        		.parallel()
+        		.count();
+        System.out.println(nos);
         long end=System.currentTimeMillis();
         System.out.println(end-start+" ms");
 

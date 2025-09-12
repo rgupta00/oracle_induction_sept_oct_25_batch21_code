@@ -1,4 +1,5 @@
 package com.day5.session3;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 class NewDog{
@@ -19,6 +20,7 @@ public class A_Intro_Generics {
 		list.add("foo");
 		list.add("apple");
 		list.add("umesh");
+	
 		myFoo(list);
 		for(String data: list) {
 			System.out.println(data);
@@ -28,9 +30,10 @@ public class A_Intro_Generics {
 			//dont gen and non gen
 	}
 
+	
 	//java 4
-	 static void myFoo(List list) {
-		list.add(new NewDog());
+	 static void myFoo(List<String> list) {
+		list.add("raj");
 	}
 }
 

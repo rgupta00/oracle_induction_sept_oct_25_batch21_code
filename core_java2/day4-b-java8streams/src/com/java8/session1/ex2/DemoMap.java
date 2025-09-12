@@ -1,5 +1,6 @@
 package com.java8.session1.ex2;
 import java.util.*;
+import java.util.Map.Entry;
 import java.util.function.Consumer;
 
 class EmpSalarySorter implements Comparator<Emp>{
@@ -75,11 +76,19 @@ public class DemoMap {
         emps.add(new Emp(14,"ekta",6000));
         emps.add(new Emp(162,"sumit",7000));
 
-//        Map<String,Integer> studentRec=new HashMap<>();
-//        studentRec.put("raj",90);
-//        studentRec.put("ekta",80);
-//        studentRec.put("gunika",79);
+        Map<String,Integer> studentRec=new HashMap<>();
+        studentRec.put("raj",90);
+        studentRec.put("ekta",80);
+        studentRec.put("gunika",79);
 
+//        studentRec
+//        .forEach((name,mark)->System.out.println(name +": "+mark));
+//        
+        
+        studentRec.entrySet().stream()
+        .forEach(e-> System.out.println(e.getKey()+": "+ e.getValue()));
+        
+        
 //        Set<Map.Entry<String, Integer>> entrySet = studentRec.entrySet();
 //        for(Map.Entry<String, Integer> entry: entrySet){
 //            System.out.println(entry.getKey()+": "+ entry.getValue());
@@ -190,6 +199,7 @@ public class DemoMap {
                 .stream()
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))//comparingByValue vs comparingByKey
                 .forEach( e-> System.out.println(e.getKey()+": "+e.getValue()));
+        
 
         //?
         Comparator<Emp> comparator=( o1,  o2) ->

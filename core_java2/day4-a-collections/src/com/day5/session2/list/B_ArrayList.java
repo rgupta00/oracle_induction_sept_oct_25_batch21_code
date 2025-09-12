@@ -1,5 +1,6 @@
 package com.day5.session2.list;
 import java.util.*;
+
 public class B_ArrayList {
 
     public static void main(String[] args) {

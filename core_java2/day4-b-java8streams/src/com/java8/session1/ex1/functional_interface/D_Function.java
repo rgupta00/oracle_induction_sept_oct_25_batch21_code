@@ -88,8 +88,26 @@ class Emp{
 public class D_Function {
     public static void main(String[] args) {
     	
-    	//Take one thing convert into other thing
+    	//Take one thing convert into other thing=> function
     	//String -> int
+    	//Name of person give me no of char into this
+    	Function<String, Integer>f1=name-> name.length();
+    	System.out.println(f1.apply("raj"));
+    	
+    	//emp -> salary
+    	Function<Employee, Double>f2= e-> e.getSalary();
+		//emp -> empData
+    	Function<Emp, EmpData>f3=e->new EmpData(e.getId(), e.getSalary());
+		
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
     	
 //    	Function<String, Integer> nameToLength=name-> name.length();
 //    	
