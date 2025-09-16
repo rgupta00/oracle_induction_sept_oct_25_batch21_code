@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:orders xmlns:tns="http://www.oracle.com/orders"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.oracle.com/orders orders.xsd ">
+	<oderId>1</oderId>
+	<customId>123</customId>
+	<orderItems>
+		<itemId>121</itemId>
+		<itemName>dell laptop</itemName>
+		<quantity>1</quantity>
+	</orderItems>
+		<orderItems>
+		<itemId>11</itemId>
+		<itemName>laptop laptop</itemName>
+		<quantity>1</quantity>
+	</orderItems>
+</tns:orders>

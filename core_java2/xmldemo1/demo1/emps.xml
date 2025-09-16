@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<emps>
+
+	<emp>
+	    <comparison><![CDATA[6 is < 7 & 7 > 6]]></comparison>
+		<id>121</id>
+		<name>raj</name>
+		<city>delhi</city>
+	</emp>
+	<emp>
+		<id>821</id>
+		<name>ekta</name>
+		<city>noida</city>
+	</emp>
+	<emp>
+		<id>11</id>
+		<name>lakshya</name>
+		<city>banglore</city>
+	</emp>
+	
+</emps>
