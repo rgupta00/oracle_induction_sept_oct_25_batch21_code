@@ -30,5 +30,22 @@ public class ProductServiceImpl implements ProductService{
 		}
 		return product;
 	}
+	@Override
+	public Product addProduct(Product product) {
+		Product productAdded=productRepo.addProduct(product);
+		return productAdded;
+	}
+	@Override
+	public Product updateProduct(int id, Product product) {
+		Product updatedProduct= productRepo.updateProduct(id, product);
+		
+		return updatedProduct;
+	}
+	@Override
+	public Product deleteProduct(int id) {
+		Product productToDelete=productRepo.deleteProduct(id);
+		
+		return productToDelete;
+	}
 
 }
