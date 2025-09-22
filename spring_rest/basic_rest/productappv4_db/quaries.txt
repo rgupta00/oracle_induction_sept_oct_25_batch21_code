@@ -1,0 +1,11 @@
+create table product (
+    id number(10) generated always as identity primary key,
+    name varchar2(100),
+    price number(15,2)
+);
+
+insert into product (name, price) values ('Laptop', 75000.00);
+insert into product (name, price) values ('Smartphone', 35000.50);
+insert into product (name, price) values ('Headphones', 1999.99);
+insert into product (name, price) values ('Monitor', 12500.00);
+insert into product (name, price) values ('Keyboard', 850.75);

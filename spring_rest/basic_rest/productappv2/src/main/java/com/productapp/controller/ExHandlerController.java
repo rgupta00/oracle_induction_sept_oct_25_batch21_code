@@ -15,15 +15,24 @@ public class ExHandlerController {
 	
 	@ExceptionHandler(ProductNotFoundException.class)
 	public ResponseEntity<ErrorMessageDto> handle404(ProductNotFoundException ex) {
+
+		//LocalDateTime timeStemp, String message, String statusCode, String toContact
 		ErrorMessageDto errorMessageDto=
-				ErrorMessageDto
-				.builder()
-				.message(ex.getMessage())
-				.statusCode(HttpStatus.NOT_FOUND.toString())
-				.toContact("ravi@oracle.com")
-				.timeStemp(LocalDateTime.now())
-				.build();
+				new ErrorMessageDto(LocalDateTime.now(), ex.getMessage(),
+						HttpStatus.NOT_FOUND.toString(), "ravi@oracle.com");
 		
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorMessageDto);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
