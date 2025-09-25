@@ -52,7 +52,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+			<version>3.4.10</version>
 		</dependency>
 
 		<dependency>
@@ -92,81 +96,10 @@
 	</dependencies>
 
 	<build>
-		<sourceDirectory>src/main/java</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.12.1</version>
-				<configuration>
-					<source>${maven.source.compiler}</source>
-					<target>${maven.target.compiler}</target>
-					<encoding>${maven.encoding}</encoding>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.openapitools</groupId>
-				<artifactId>openapi-generator-maven-plugin</artifactId>
-				<version>7.4.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<inputSpec>
-								${project.basedir}/src/main/resources/api.yaml</inputSpec>
-							<generatorName>spring</generatorName>
-							<packageName>com.productapp</packageName>
-							<apiPackage>com.productapp.api</apiPackage>
-							<modelPackage>com.productapp.model</modelPackage>
-							<generateSupportingFiles>true</generateSupportingFiles>
-							<generateApiDocumentation>true</generateApiDocumentation>
-							<generateModels>true</generateModels>
-							<generateApis>true</generateApis>
-							<configOptions>
-								<useSpringBoot3>true</useSpringBoot3>
-								<useTags>true</useTags>
-								<useSpringController>true</useSpringController>
-								<interfaceOnly>true</interfaceOnly>
-								<dateLibrary>java8</dateLibrary>
-								<modelAnnotations>@lombok.Data</modelAnnotations>
-							</configOptions>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>3.3.0</version>
-				<executions>
-					<execution>
-						<id>add-source</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>add-source</goal>
-						</goals>
-						<configuration>
-							<sources>
-								<source>
-									${project.build.directory}/generated-sources/openapi/src/main/java
-								</source>
-							</sources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>3.4.10</version> <!-- ✅ must match parent -->
 				<configuration>
 					<excludes>
 						<exclude>

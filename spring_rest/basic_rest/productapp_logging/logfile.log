@@ -1,0 +1,237 @@
+INFO  | 2025-09-24 16:04:50 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 7492 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:04:50 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:04:51 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:04:51 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:04:51 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:04:51 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:04:51 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:04:51 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 853 ms
+INFO  | 2025-09-24 16:04:51 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+WARN  | 2025-09-24 16:04:51 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:635) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+INFO  | 2025-09-24 16:04:51 | [main] logging.ConditionEvaluationReportLogger (ConditionEvaluationReportLogger.java:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR | 2025-09-24 16:04:51 | [main] diagnostics.LoggingFailureAnalysisReporter (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+INFO  | 2025-09-24 16:05:02 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 11256 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:05:02 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:05:02 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:05:02 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:05:02 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:05:02 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:05:02 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:05:02 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 542 ms
+INFO  | 2025-09-24 16:05:02 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:05:02 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:243) - Tomcat started on port 8080 (http) with context path '/'
+INFO  | 2025-09-24 16:05:03 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:59) - Started ProductappLoggingApplication in 1.142 seconds (process running for 1.768)
+INFO  | 2025-09-24 16:05:03 | [main] productapp.ProductappLoggingApplication (ProductappLoggingApplication.java:19) - hello logging
+INFO  | 2025-09-24 16:08:22 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 29316 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:08:22 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:08:23 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:08:23 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:08:23 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:08:23 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:08:23 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:08:23 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 551 ms
+INFO  | 2025-09-24 16:08:23 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+WARN  | 2025-09-24 16:08:23 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:635) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+INFO  | 2025-09-24 16:08:23 | [main] logging.ConditionEvaluationReportLogger (ConditionEvaluationReportLogger.java:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR | 2025-09-24 16:08:23 | [main] diagnostics.LoggingFailureAnalysisReporter (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+INFO  | 2025-09-24 16:08:29 | [RMI TCP Connection(14)-127.0.0.1] admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin (SpringApplicationAdminMXBeanRegistrar.java:159) - Application shutdown requested.
+INFO  | 2025-09-24 16:08:29 | [RMI TCP Connection(14)-127.0.0.1] tomcat.GracefulShutdown (GracefulShutdown.java:54) - Commencing graceful shutdown. Waiting for active requests to complete
+INFO  | 2025-09-24 16:08:29 | [tomcat-shutdown] logging.DirectJDKLog (DirectJDKLog.java:168) - Pausing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:08:29 | [tomcat-shutdown] tomcat.GracefulShutdown (GracefulShutdown.java:76) - Graceful shutdown complete
+INFO  | 2025-09-24 16:08:29 | [RMI TCP Connection(14)-127.0.0.1] logging.DirectJDKLog (DirectJDKLog.java:168) - Stopping ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:08:34 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 21264 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:08:34 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:08:35 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:08:35 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:08:35 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:08:35 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:08:35 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:08:35 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 825 ms
+INFO  | 2025-09-24 16:08:35 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:08:35 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:243) - Tomcat started on port 8080 (http) with context path '/'
+INFO  | 2025-09-24 16:08:35 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:59) - Started ProductappLoggingApplication in 1.68 seconds (process running for 2.616)
+INFO  | 2025-09-24 16:08:35 | [main] productapp.ProductappLoggingApplication (ProductappLoggingApplication.java:19) - hello logging
+INFO  | 2025-09-24 16:10:06 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 28524 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:10:06 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:10:07 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:10:07 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:10:07 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:10:07 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:10:07 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:10:07 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 800 ms
+INFO  | 2025-09-24 16:10:07 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+WARN  | 2025-09-24 16:10:07 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:635) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+INFO  | 2025-09-24 16:10:07 | [main] logging.ConditionEvaluationReportLogger (ConditionEvaluationReportLogger.java:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR | 2025-09-24 16:10:07 | [main] diagnostics.LoggingFailureAnalysisReporter (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+INFO  | 2025-09-24 16:10:11 | [RMI TCP Connection(12)-127.0.0.1] admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin (SpringApplicationAdminMXBeanRegistrar.java:159) - Application shutdown requested.
+INFO  | 2025-09-24 16:10:11 | [RMI TCP Connection(12)-127.0.0.1] tomcat.GracefulShutdown (GracefulShutdown.java:54) - Commencing graceful shutdown. Waiting for active requests to complete
+INFO  | 2025-09-24 16:10:11 | [tomcat-shutdown] logging.DirectJDKLog (DirectJDKLog.java:168) - Pausing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:10:12 | [tomcat-shutdown] tomcat.GracefulShutdown (GracefulShutdown.java:76) - Graceful shutdown complete
+INFO  | 2025-09-24 16:10:12 | [RMI TCP Connection(12)-127.0.0.1] logging.DirectJDKLog (DirectJDKLog.java:168) - Stopping ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:10:17 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 29744 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:10:17 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:10:18 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:10:18 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:10:18 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:10:18 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:10:18 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:10:18 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 821 ms
+INFO  | 2025-09-24 16:10:18 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:10:18 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:243) - Tomcat started on port 8080 (http) with context path '/'
+INFO  | 2025-09-24 16:10:18 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:59) - Started ProductappLoggingApplication in 1.693 seconds (process running for 2.691)
+INFO  | 2025-09-24 16:10:18 | [main] productapp.ProductappLoggingApplication (ProductappLoggingApplication.java:19) - hello logging
+INFO  | 2025-09-24 16:12:09 | [RMI TCP Connection(12)-127.0.0.1] admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin (SpringApplicationAdminMXBeanRegistrar.java:159) - Application shutdown requested.
+INFO  | 2025-09-24 16:12:09 | [RMI TCP Connection(12)-127.0.0.1] tomcat.GracefulShutdown (GracefulShutdown.java:54) - Commencing graceful shutdown. Waiting for active requests to complete
+INFO  | 2025-09-24 16:12:09 | [tomcat-shutdown] logging.DirectJDKLog (DirectJDKLog.java:168) - Pausing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:12:09 | [tomcat-shutdown] tomcat.GracefulShutdown (GracefulShutdown.java:76) - Graceful shutdown complete
+INFO  | 2025-09-24 16:12:09 | [RMI TCP Connection(12)-127.0.0.1] logging.DirectJDKLog (DirectJDKLog.java:168) - Stopping ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:12:36 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 17552 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:12:36 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:12:37 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:12:37 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:12:37 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:12:37 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:12:37 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:12:37 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 938 ms
+INFO  | 2025-09-24 16:12:37 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:12:37 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:243) - Tomcat started on port 8080 (http) with context path '/'
+INFO  | 2025-09-24 16:12:37 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:59) - Started ProductappLoggingApplication in 1.933 seconds (process running for 2.912)
+INFO  | 2025-09-24 16:12:37 | [main] productapp.ProductappLoggingApplication (ProductappLoggingApplication.java:19) - hello logging
+INFO  | 2025-09-24 16:13:07 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 26356 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:13:07 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:13:07 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:13:08 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:13:08 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:13:08 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:13:08 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:13:08 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 963 ms
+INFO  | 2025-09-24 16:13:08 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+WARN  | 2025-09-24 16:13:08 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:635) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+INFO  | 2025-09-24 16:13:08 | [main] logging.ConditionEvaluationReportLogger (ConditionEvaluationReportLogger.java:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR | 2025-09-24 16:13:08 | [main] diagnostics.LoggingFailureAnalysisReporter (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+INFO  | 2025-09-24 16:13:12 | [RMI TCP Connection(10)-127.0.0.1] admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin (SpringApplicationAdminMXBeanRegistrar.java:159) - Application shutdown requested.
+INFO  | 2025-09-24 16:13:12 | [RMI TCP Connection(10)-127.0.0.1] tomcat.GracefulShutdown (GracefulShutdown.java:54) - Commencing graceful shutdown. Waiting for active requests to complete
+INFO  | 2025-09-24 16:13:12 | [tomcat-shutdown] logging.DirectJDKLog (DirectJDKLog.java:168) - Pausing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:13:13 | [tomcat-shutdown] tomcat.GracefulShutdown (GracefulShutdown.java:76) - Graceful shutdown complete
+INFO  | 2025-09-24 16:13:13 | [RMI TCP Connection(10)-127.0.0.1] logging.DirectJDKLog (DirectJDKLog.java:168) - Stopping ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:13:41 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 29380 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:13:41 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:13:42 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:13:42 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:13:42 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:13:42 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:13:42 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:13:42 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 565 ms
+INFO  | 2025-09-24 16:13:42 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:13:42 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:243) - Tomcat started on port 8080 (http) with context path '/'
+INFO  | 2025-09-24 16:13:42 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:59) - Started ProductappLoggingApplication in 1.234 seconds (process running for 1.933)
+INFO  | 2025-09-24 16:13:42 | [main] productapp.ProductappLoggingApplication (ProductappLoggingApplication.java:19) - hello logging
+INFO  | 2025-09-24 16:13:57 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 14072 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:13:57 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:13:57 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:13:57 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:13:57 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:13:57 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:13:57 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:13:57 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 821 ms
+INFO  | 2025-09-24 16:13:58 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+WARN  | 2025-09-24 16:13:58 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:635) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+INFO  | 2025-09-24 16:13:58 | [main] logging.ConditionEvaluationReportLogger (ConditionEvaluationReportLogger.java:82) - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+ERROR | 2025-09-24 16:13:58 | [main] diagnostics.LoggingFailureAnalysisReporter (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+INFO  | 2025-09-24 16:14:05 | [RMI TCP Connection(8)-127.0.0.1] admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin (SpringApplicationAdminMXBeanRegistrar.java:159) - Application shutdown requested.
+INFO  | 2025-09-24 16:14:05 | [RMI TCP Connection(8)-127.0.0.1] tomcat.GracefulShutdown (GracefulShutdown.java:54) - Commencing graceful shutdown. Waiting for active requests to complete
+INFO  | 2025-09-24 16:14:05 | [tomcat-shutdown] logging.DirectJDKLog (DirectJDKLog.java:168) - Pausing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:14:05 | [tomcat-shutdown] tomcat.GracefulShutdown (GracefulShutdown.java:76) - Graceful shutdown complete
+INFO  | 2025-09-24 16:14:05 | [RMI TCP Connection(8)-127.0.0.1] logging.DirectJDKLog (DirectJDKLog.java:168) - Stopping ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:14:37 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:53) - Starting ProductappLoggingApplication using Java 17.0.10 with PID 21288 (C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging\target\classes started by busyc in C:\oracle_induction_sept_oct_25_batch21_code\spring_rest\basic_rest\productapp_logging)
+INFO  | 2025-09-24 16:14:38 | [main] boot.SpringApplication (SpringApplication.java:652) - No active profile set, falling back to 1 default profile: "default"
+INFO  | 2025-09-24 16:14:38 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:111) - Tomcat initialized with port 8080 (http)
+INFO  | 2025-09-24 16:14:38 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:14:38 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting service [Tomcat]
+INFO  | 2025-09-24 16:14:38 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting Servlet engine: [Apache Tomcat/10.1.46]
+INFO  | 2025-09-24 16:14:38 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Initializing Spring embedded WebApplicationContext
+INFO  | 2025-09-24 16:14:38 | [main] context.ServletWebServerApplicationContext (ServletWebServerApplicationContext.java:301) - Root WebApplicationContext: initialization completed in 773 ms
+INFO  | 2025-09-24 16:14:39 | [main] logging.DirectJDKLog (DirectJDKLog.java:168) - Starting ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:14:39 | [main] tomcat.TomcatWebServer (TomcatWebServer.java:243) - Tomcat started on port 8080 (http) with context path '/'
+INFO  | 2025-09-24 16:14:39 | [main] boot.StartupInfoLogger (StartupInfoLogger.java:59) - Started ProductappLoggingApplication in 1.629 seconds (process running for 2.546)
+INFO  | 2025-09-24 16:14:39 | [main] productapp.ProductappLoggingApplication (ProductappLoggingApplication.java:19) - hello logging
+INFO  | 2025-09-24 16:16:00 | [RMI TCP Connection(11)-127.0.0.1] admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin (SpringApplicationAdminMXBeanRegistrar.java:159) - Application shutdown requested.
+INFO  | 2025-09-24 16:16:00 | [RMI TCP Connection(11)-127.0.0.1] tomcat.GracefulShutdown (GracefulShutdown.java:54) - Commencing graceful shutdown. Waiting for active requests to complete
+INFO  | 2025-09-24 16:16:00 | [tomcat-shutdown] logging.DirectJDKLog (DirectJDKLog.java:168) - Pausing ProtocolHandler ["http-nio-8080"]
+INFO  | 2025-09-24 16:16:01 | [tomcat-shutdown] tomcat.GracefulShutdown (GracefulShutdown.java:76) - Graceful shutdown complete
+INFO  | 2025-09-24 16:16:01 | [RMI TCP Connection(11)-127.0.0.1] logging.DirectJDKLog (DirectJDKLog.java:168) - Stopping ProtocolHandler ["http-nio-8080"]
