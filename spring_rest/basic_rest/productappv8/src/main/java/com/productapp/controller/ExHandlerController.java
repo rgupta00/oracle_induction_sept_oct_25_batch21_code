@@ -26,7 +26,7 @@ public class ExHandlerController {
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorMessageDto);
 	}
 	
-	@ExceptionHandler(Exception.class)
+//	@ExceptionHandler(Exception.class)
 	public ResponseEntity<ErrorMessageDto> handle500(Exception ex) {
 
 		//LocalDateTime timeStemp, String message, String statusCode, String toContact

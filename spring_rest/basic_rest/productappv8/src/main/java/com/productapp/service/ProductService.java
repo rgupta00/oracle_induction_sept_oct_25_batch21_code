@@ -11,4 +11,6 @@ public interface ProductService {
 	public Product addProduct(Product product);
 	public Product updateProduct(int id , Product product);
 	public Product deleteProduct(int id);
+	
+	public void invalidateCache();
 }
