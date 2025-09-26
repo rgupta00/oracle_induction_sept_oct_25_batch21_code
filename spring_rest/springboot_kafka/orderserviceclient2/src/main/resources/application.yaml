@@ -1,0 +1,8 @@
+spring:
+#  kafka:
+#      properties:
+#        spring.json.trusted.packages: "*"
+  application:
+    name: orderservice-client
+kafka:
+  topic: order-events1

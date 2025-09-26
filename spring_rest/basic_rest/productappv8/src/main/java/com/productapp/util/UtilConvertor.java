@@ -1,7 +1,7 @@
 package com.productapp.util;
 
 import com.productapp.dto.ProductDto;
-import com.productapp.repo.Product;
+import com.productapp.entities.Product;
 
 public class UtilConvertor {
 

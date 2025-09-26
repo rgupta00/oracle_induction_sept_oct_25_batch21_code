@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
-import com.productapp.repo.Product;
+import com.productapp.entities.Product;
 import com.productapp.repo.ProductRepo;
 
 @Configuration

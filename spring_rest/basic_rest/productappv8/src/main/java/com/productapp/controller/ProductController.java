@@ -15,7 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.productapp.repo.Product;
+import com.productapp.dto.ProductDto;
+import com.productapp.entities.Product;
 import com.productapp.service.ProductService;
 
 import jakarta.validation.Valid;
@@ -33,25 +34,25 @@ public class ProductController {
 	//get all the products
 	@GetMapping(path = "products", produces = {MediaType.APPLICATION_JSON_VALUE,
 			MediaType.APPLICATION_XML_VALUE})
-	public ResponseEntity<List<Product>> getAll(){
+	public ResponseEntity<List<ProductDto>> getAll(){
 		return ResponseEntity.status(HttpStatus.OK).body(productService.getAll());
 	}
 	//get a product by id
 	@GetMapping(path = "products/{id}")
-	public ResponseEntity<Product> getById(@PathVariable("id") int id) {
+	public ResponseEntity<ProductDto> getById(@PathVariable("id") int id) {
 		return ResponseEntity.ok(productService.getById(id));
 	}
 	//add: parser jakson : @RequestBody it tigger the parser to convert json --> java 
 	@PostMapping(path = "products")
-	public ResponseEntity<Product> addProduct(@Valid @RequestBody  Product product) {
-		return ResponseEntity.status(HttpStatus.CREATED).body(productService.addProduct(product));
+	public ResponseEntity<ProductDto> addProduct(@Valid @RequestBody  ProductDto productDto) {
+		return ResponseEntity.status(HttpStatus.CREATED).body(productService.addProduct(productDto));
 	}
 	
 	//update
 	@PutMapping(path = "products/{id}")
-	public ResponseEntity<Product> updateProduct( @PathVariable("id") int id, 
-			@Valid @RequestBody  Product product) {
-		return ResponseEntity.ok(productService.updateProduct(id, product));
+	public ResponseEntity<ProductDto> updateProduct( @PathVariable("id") int id, 
+			@Valid @RequestBody  ProductDto productDto) {
+		return ResponseEntity.ok(productService.updateProduct(id,productDto));
 	}
 	
 	//delete

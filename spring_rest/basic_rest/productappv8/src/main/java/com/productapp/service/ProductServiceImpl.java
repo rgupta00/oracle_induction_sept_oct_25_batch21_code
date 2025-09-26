@@ -10,10 +10,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.productapp.dto.ProductDto;
+import com.productapp.entities.Product;
 import com.productapp.exceptions.ProductNotFoundException;
-import com.productapp.repo.Product;
 import com.productapp.repo.ProductRepo;
 import com.productapp.service.aspect.MyLogging;
+import com.productapp.util.UtilConvertor;
 //BL+ CCC
 @Service
 @Transactional(isolation = Isolation.SERIALIZABLE)
@@ -30,38 +32,44 @@ public class ProductServiceImpl implements ProductService{
 	@MyLogging
 	@Cacheable(value="products")
 	@Override
-	public List<Product> getAll() {
+	public List<ProductDto> getAll() {
 		System.out.println("------------------service layer is called------getAll------");
-		return  productRepo.findAll();	
+		return  productRepo.findAll().stream()
+				.map(UtilConvertor::productToProductDto).toList();	
 	}
 	
 	@Cacheable(value="products", key = "#id")
 	@MyLogging
 	@Override
-	public Product getById(int id) {
-		return productRepo.findById(id)
+	public ProductDto getById(int id) {
+		Product product= productRepo.findById(id)
 				.orElseThrow(()->new ProductNotFoundException("product with id "+ id +" is not found"));
+		return UtilConvertor.productToProductDto(product);
 	}
 	@CachePut(value="products", key="#result.id")
 	@Override
-	public Product addProduct(Product product) {
-		productRepo.save(product);
-		return product;
+	public ProductDto addProduct(ProductDto productDto) {
+		Product productToSave=UtilConvertor.productDtoToProduct(productDto);
+		
+		productRepo.save(productToSave);
+		
+		return UtilConvertor.productToProductDto(productToSave);
+		
 	}
 	@CachePut(value="products", key="#result.id")
 	@Override
-	public Product updateProduct(int id, Product product) {
-		Product productToUpdate=getById(id);
-		productToUpdate.setPrice(product.getPrice());
-		productRepo.save(productToUpdate);
-		return productToUpdate;
+	public ProductDto updateProduct(int id, ProductDto productDto) {
+		ProductDto productDtoToUpdate=getById(id);
+		productDtoToUpdate.setPrice(productDto.getPrice());
+		productRepo.save(UtilConvertor.productDtoToProduct(productDtoToUpdate));
+		return productDtoToUpdate;
 	}
 	@CacheEvict(value="products", key="#id")
 	@Override
-	public Product deleteProduct(int id) {
-		Product productToDelete=getById(id);
+	public ProductDto deleteProduct(int id) {
+		ProductDto productToDelete=getById(id);
 		
-		productRepo.delete(productToDelete);
+		productRepo.delete(UtilConvertor.productDtoToProduct(productToDelete));
 		
 		return productToDelete;
 	}

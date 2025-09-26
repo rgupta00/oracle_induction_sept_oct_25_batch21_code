@@ -1,4 +1,4 @@
-package com.productapp.repo;
+package com.productapp.entities;
 
 import java.math.BigDecimal;
 
@@ -28,11 +28,8 @@ public class Product {
 	private int id;
 	
 	@Column(name = "product_name")
-	@NotNull(message = "{product.name.absent}")
 	private String name;
 	
-	@NotNull(message = "{product.price.absent}")
-	@Range(min = 10, max = 1000000, message = "{product.price.invalid}")
 	@Column(name = "product_price")
 	private BigDecimal price;
 
