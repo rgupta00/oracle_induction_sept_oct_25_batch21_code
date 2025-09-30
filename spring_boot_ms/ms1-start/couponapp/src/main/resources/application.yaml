@@ -3,9 +3,28 @@ server:
 spring:
   profiles:
     active:
-      - "default"
+      - "dev"
   application:
     name: coupons
+  config:
+    import: optional:configserver:http://localhost:8888
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+management:
+  tracing:
+    sampling:
+      probability: 1.0
   endpoints:
     web:
       exposure:
@@ -15,8 +34,7 @@ spring:
       enabled: true
   info:
     env:
-      enabled: true
-
+      enabled: true   
 data:
   info: default profile couponservice
 

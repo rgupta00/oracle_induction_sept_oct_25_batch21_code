@@ -3,14 +3,16 @@ package com.coupon.controller;
 import com.coupon.dto.Coupon;
 import com.coupon.service.CouponService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
+@RefreshScope
 @RestController
 public class CouponController {
 
     private CouponService couponServicel;
+    
     @Value("${data.info}")
     private String info;
 
@@ -27,6 +29,7 @@ public class CouponController {
 
     @GetMapping("coupon/{couponCode}")
     public Coupon getCouponByCode(@PathVariable String couponCode) {
+    	System.out.println("--------------couponservice instance 1------------");
         return couponServicel.getCouponByCode(couponCode);
     }
 }

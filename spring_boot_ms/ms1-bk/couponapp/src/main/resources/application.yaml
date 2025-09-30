@@ -5,7 +5,8 @@ spring:
     active:
       - "default"
   application:
-    name: coupons
+    name: coupon
+management:
   endpoints:
     web:
       exposure:
@@ -15,8 +16,7 @@ spring:
       enabled: true
   info:
     env:
-      enabled: true
-
+      enabled: true   
 data:
   info: default profile couponservice
 

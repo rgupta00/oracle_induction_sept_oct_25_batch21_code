@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CouponController {
 
     private CouponService couponServicel;
+    
     @Value("${data.info}")
     private String info;
 
