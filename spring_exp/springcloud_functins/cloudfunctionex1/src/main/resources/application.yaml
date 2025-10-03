@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    function:
+      definition: processOrder;orderNotifier
+    web:
+      path:
+        processOrder: /order
+        orderNotifier: /notify
+
+#spring:
+#  cloud:
+#    function:
+#      definition: uppercase
+#      web:
+#        path: /uppercase

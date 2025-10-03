@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oo in classical js</title>
+</head>
+
+<body>
+    <script>
+
+        //     var ob={
+        //         "name":"raj",
+        //         "add":"delhi",
+        //         "qualification":{
+        //             "one":"BTech",
+        //             "two":"Mtech"
+        //         }
+        //     }
+        //     console.log(ob.name+" "+ ob.add+" "+ob.qualification.one)
+
+        //     var myObj={"name":"raja",
+        //    "age":30,
+        //    "address":{
+        //        "street":"a 2",
+        //        "city":"delhi"
+        //    }}
+
+        //     console.log(myObj.name+" "+ myObj.address.street)
+
+        //ctr function 
+        // function Emp(name, age, add, salary){
+        //     this.name=name;
+        //     this.add=age;
+        //     this.add=add;
+        //     this.salary=salary
+
+        // };
+        // Emp.prototype.showData=function(){
+        //         console.log(this.name+" : "+ this.add+" : "+ this.salary );
+        // }
+        // var e=new Emp('raj',45,'delhi',78900);
+        // e.showData();
+
+
+        // var e2=new Emp('ekta',45,'delhi',79900);
+        // e2.showData();
+        // console.log(e.showData==e2.showData)
+
+        function Emp(name) {
+            this.name = name;
+        }
+
+        // Add method to Emp prototype
+        Emp.prototype.display = function () {
+            console.log("Name:", this.name);
+        };
+
+        // Add method to Object prototype
+        Object.prototype.sayHello = function () {
+            console.log("Hello from Object prototype!");
+        };
+
+        // Create an instance
+        var emp1 = new Emp("Raj");
+
+        // Method from Emp.prototype
+        emp1.display();      // Output: Name: Raj
+
+        console.log(Object.getPrototypeOf(emp1) === Emp.prototype); // true
+        console.log(Object.getPrototypeOf(Emp.prototype) === Object.prototype); // true
+        console.log(Object.getPrototypeOf(Object.prototype) === null); // true
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom processing</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p class="info">Text</p>
+    <ul>
+        <li class="item">One</li>
+        <li class="item">Two</li>
+    </ul>
+    <button id="clickBtn">Click Me</button>
+    <p id="hoverText">Hover over me!</p>
+    <input type="text" id="inputBox" placeholder="Type something">
+
+    <script>
+        document.getElementById("inputBox").addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);
+        });
+        document.getElementById('clickBtn').addEventListener("click",  ()=> alert("button is clicked"))
+        document.getElementById("hoverText").addEventListener("mouseover", function () {
+            this.innerText = "Mouse is over me!";
+        })
+
+        // document.getElementById('demo').innerHTML = 'i love js'
+        // document.querySelector(".info").innerText = "Hello using querySelector";
+        // const items = document.querySelectorAll(".item");
+        // items.forEach(el => el.style.color = "blue");
+
+    </script>
+</body>
+
+</html>

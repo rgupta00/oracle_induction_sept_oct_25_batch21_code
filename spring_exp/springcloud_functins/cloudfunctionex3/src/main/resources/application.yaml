@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cloudfunction-kafka-demo
+
+  cloud:
+    function:
+      # List of function/consumer/supplier beans
+      definition: processOrder;notifyCustomer;orderIdGenerator
+
+      # Map function beans to REST endpoints for Postman testing
+      web:
+        processOrder: /processOrder
+        orderIdGenerator: /orderIdGenerator
+        notifyCustomer: /notifyCustomer
+
+    stream:
+      defaultBinder: kafka
+      bindings:
+        processOrder-in-0:
+          destination: orders-topic
+          group: order-service-group
+        processOrder-out-0:
+          destination: order-confirmations-topic
+        notifyCustomer-in-0:
+          destination: order-confirmations-topic
+
+  kafka:
+    bootstrap-servers: localhost:9092

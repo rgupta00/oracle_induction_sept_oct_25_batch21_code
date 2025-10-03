@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloudfunction
+  cloud:
+    function:
+      definition: uppercase;logMessage;greet;processOrder;orderNotifier
+      web:
+        uppercase: /uppercase
+        logMessage: /log
+        greet: /greet
+        processOrder: /processOrder
+        orderNotifier: /orderNotifier
