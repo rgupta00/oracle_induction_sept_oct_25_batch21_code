@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function showColors(...colors){
+        //     for(c of colors){
+        //         console.log(c)
+        //     }
+        // }
+
+        // showColors('java',"red","blue","green");
+
+        //     function getSummation(...datas) {
+        //         let sum=0
+        //         for (d of datas) {
+        //             sum+=d
+        //         }
+        //         return d
+        //     }
+
+        //    let sum=getSummation(1,4,6);
+        //     console.log(sum)
+
+        // let arr = [1, 2, 3];
+        // console.log(...arr);  // 1 2 3
+        //  rest operator: it take indual element and convert to arr
+        // function showColors(...colors) {
+        //     console.log(colors); // ['Red', 'Blue']
+        // }
+        // let colorArr=["Red", "Blue"]
+        // showColors(...colorArr  );//spread op
+        const nums1 = [1, 2];
+        const nums2 = [3, 4];
+
+        const merged = [...nums1,... nums2];
+        console.log(merged); // [1, 2, 3, 4]
+    </script>
+</body>
+
+</html>
