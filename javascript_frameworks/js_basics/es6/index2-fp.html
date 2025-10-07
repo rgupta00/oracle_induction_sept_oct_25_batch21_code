@@ -4,20 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>functional programming</title>
+    <title>Document</title>
 </head>
 
 <body>
     <script>
-        // let f1=()=> "hello";
-        // let f2=(a, b)=> a+b;
-        //fp in js used higher order function: a function is std be higher order fuction if take another fun as argument
-
-        // let f1=x=>console.log(x)
-
-        // function foo(f1){
-        //         f1('raj')
-        // }
+        //stream programming js declartive code, higher order function , call back(event handing)
 
         const companies = [
             { name: "Company One", category: "Finance", start: 1981, end: 2003 },
@@ -32,25 +24,45 @@
         ];
 
         const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
-        // ages.forEach(age=> console.log(age))
-        //  ages.filter(age=> age>=21).forEach(age=> console.log(age))
-        //   companies.forEach(c=> console.log(c))
-        // companies.filter(c=>c.category=='Retail').forEach(c=> console.log(c))
+        // const sumOfAges= ages.reduce(function(total, age) {
+        //     console.log(`${total} and ${age}`)
+        //     return total * age
+        // } , 0)
+        // console.log(sumOfAges)
+        //reduction vs accumelation
+        // let sum=0;
+        // for(a of ages){
+        //     sum+=a;
+        // }
 
-        // companies.filter(company => company.start >= 1980 && company.end <= 1990)
-        //     .forEach(c => console.log(c));
-        // companies.map(c=> c.name).forEach(cn=> console.log(cn))
-        // const sortedCompanies = companies.sort((c1, c2) => c1.start > c2.start ? 1 : -1 );
-        // console.table(sortedCompanies);
+        //i wnat to print all elemnt of this array
+        //ages.filter(age=> age>=21).forEach(age=>console.log(age))
 
-        // const ageSum = ages.reduce((total, age) => total + age, 0);
-    //     const ageSum=ages.reduce(function(total, age){
-    //         console.log(total+": "+ age)
-    //         return total +age;
-    //     }, 0)
+       // companies.filter(c=>c.category=='Retail').forEach(c=>console.log(c))
+       //print all companies of 80s
+    //    let add='delhi'
+    //    let name='raj'
+    //    let data=`my details are ${add} and name is ${name}`;
 
-    //   //  const ageSum = ages.reduce()
-    //     console.log(ageSum);
+
+
+    //    companies.filter(c=>c.start>=1980 && c.end<=2000)
+    //    .map(c=>` ${c.name} and operated for years ${c.end - c.start}`)
+    //    .forEach(c=> console.log(c))
+
+        // let addFun=(a, b)=> a+b
+        // let mulFun=(a, b)=> a*b
+        // let divFun=(a, b)=> a/b
+        // let modFun=(a, b)=> a%b
+
+        // //OCP
+        // function calApp(a, b, fun){
+        //     return fun(a, b)
+        // }
+        // console.log(calApp(1,2, divFun))
+
+
+
     </script>
 </body>
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const msg = {
+            name: "rajeev gupta",
+            desi: "trainer",
+            hobby: "traveling",
+            social: {
+                twitter: "@rajeev_gupta76",
+                facebook: "https://www.facebook.com/profile.php?id=100021806671318"
+            }
+        };
+
+        // Traditional way
+   const { name, desi, hobby, social } = msg;
+
+
+        // let arr1 = [1, 2, 3];
+        // let arr2 = [ 4,...arr1, 5];
+        // console.log(arr2); // [1, 2, 3, 4, 5]
+
+        //spread operator
+        // function sum(...nums) {
+        //     return nums.reduce((a, b) => a + b,0);
+        // }
+        // let arr=[5,7,8];
+        // console.log(sum(arr))
+
+
+        //rest operator why we need it
+        //js dont support function overloading
+
+        // function add(){
+        //     let sum=0;
+        //     let length= arguments.length;
+        //     for( temp of arguments){
+        //         sum+=temp
+        //     }
+        //     return sum
+        // }
+
+        // function add(...a){
+        //     return a.reduce((a, b)=> a+b, 0)
+        // }
+        // console.log(add(1,2,66))
+
+
+
+        //default parameters
+
+        // let f=function(a=4, b=10){
+        //     return a+b;
+        // }
+        // console.log(f(undefined,100))
+    </script>
+</body>
+
+</html>

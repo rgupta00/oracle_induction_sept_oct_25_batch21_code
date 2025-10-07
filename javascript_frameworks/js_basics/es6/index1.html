@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ES 6 + fundamentals</title>
+    <title>Understanding ES6+</title>
 </head>
-
 <body>
     <script>
-        //hoisting ?
-        // var flag = true;
-        // var fname ;
-        // if (flag) {
-        //   fname = "rajeev";
-        // }
-        // console.log(fname)
 
-        // for (var i = 0; i < 10; i++) {
-        //     var fname = "rajeev";
-        //     console.log(fname + ": " + i);
-        // }
-        // console.log(i); // Still accessible
-        // function foo() {
-        //     var flag = true;
-        //     if (flag) {
-        //         let fname = "rajeev";
-        //          console.log(fname)
-        //     }
+ //array and const and array iteration
+//    const colors = ["Red", "Blue"];
+//    for( c in colors){
+//     console.log(colors[c])
+//    }
+//    colors=null
+//    console.log(colors )
 
-        // }
-        // foo();
-        // const a=10;
-        // console.log(a)
-        // a=44;
 
-        // const ob={"name":"raj"}
-        // console.log(ob)
-        // //ob.name='rajeev'
-        // ob={"name":"raj"}
 
-        //var(classical js) vs let and const(es6)
-        // const a=55;
-        // const a=77;
-        // console.log(a)
 
-        // function greetPerson(name) {
-        //     if (name === "rajeev") {
-        //         let greet = "hello programmer";
-        //     } else {
-        //         let greet = "hello person";
-        //     }
-        //     console.log(greet); //  Works
-        // }
-        // greetPerson('ekta')
+
+    //var, let, const — Scope, Hoisting, and Redeclaration
+   //scope of var : functional scope
+   //let and const: block scope
+
+//    function greetPerson(name) {
+//     let greet;
+// 	if (name === "rajeev") {
+// 		 greet = "hello programmer";
+// 	} else {
+        
+// 		  greet = "hello person";
+// 	}
+// 	console.log(greet); //  not work
+// }
+// greetPerson('rajeev')
+
+
+
+
+    // var a=55;
+    // var a=66;
+    // console.log(a)
+    
+//     const a={"name":"raj"};
+//     a={"name":"raj"}
+//    console.log(a)
+   
+
     </script>
 </body>
-
 </html>
