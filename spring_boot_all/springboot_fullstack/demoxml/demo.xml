@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  well formness vs validation-->
+<employees>
+	<employee ssn="123">
+		<id>121 &lt; 120</id>
+		<name>raja</name>
+		<salary>30000</salary>
+		<comparison><![CDATA[6 is < 7 & 7 > 6]]></comparison>
+	</employee>
+	
+	<employee>
+		<id>121</id>
+		<name>raja</name>
+		<salary>30000</salary>
+	</employee>
+
+	<employee>
+		<id>121</id>
+		<name>raja</name>
+		<salary>30000</salary>
+	</employee>
+</employees>

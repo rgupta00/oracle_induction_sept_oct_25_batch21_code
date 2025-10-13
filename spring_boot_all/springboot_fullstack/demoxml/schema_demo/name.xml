@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:name xmlns:tns="http://www.oracle.com/name" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.oracle.com/name name.xsd ">
+  <first>raj</first>
+ 
+  <middle>kumar</middle>
+  <last>gupta</last>
+</tns:name>

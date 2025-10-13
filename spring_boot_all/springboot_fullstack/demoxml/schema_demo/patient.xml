@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:patient xmlns:tns="http://www.oracle.com/patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oracle.com/patient patient.xsd ">
+  <id>0</id>
+  <name>name</name>
+  <age>0</age>
+  <dob>2001-01-01</dob>
+  <email>rgupta.metch@gmail.com</email>
+  <gender>M</gender>
+  <phone>phone</phone>
+</tns:patient>

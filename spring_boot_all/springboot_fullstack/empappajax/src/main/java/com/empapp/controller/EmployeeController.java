@@ -17,6 +17,6 @@ public class EmployeeController {
 	@GetMapping(path = "employees")
 	public String hello(@RequestParam(name = "name") String name) {
 		System.out.println("hello ..." + name);
-		return "hello " + name;
+		return "hello " + employeeRepo.findEmployee(name);
 	}
 }

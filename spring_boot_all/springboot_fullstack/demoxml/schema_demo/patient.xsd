@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.oracle.com/patient"
+	xmlns:tns="http://www.oracle.com/patient"
+	elementFormDefault="unqualified">
+	<element name="patient" type="tns:patient"/>
+	<complexType name="patient">
+		<sequence>
+			<element name="id" type="tns:id"/>
+			<element name="name" type="tns:userName"/>
+			<element name="age" type="int"/>
+			<element name="dob" type="date"/>
+			<element name="email" type="tns:email"/>
+			<element name="gender" type="tns:gender"/>
+			<element name="phone" type="string"/>
+		</sequence>
+	</complexType>
+	
+	<simpleType name="email">
+		<restriction base="string">
+			<pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></pattern>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="gender">
+		<restriction base="string">
+			<enumeration value="M"/>
+			<enumeration value="F"/>
+		</restriction>
+	</simpleType>
+	
+	<simpleType name="userName">
+		<restriction base="string">
+			<maxLength value="30"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="id">
+		<restriction base="int">
+			<pattern value="[0-9]*"/>
+		</restriction>
+	</simpleType>
+</schema>
+
+
